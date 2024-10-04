@@ -10,17 +10,21 @@
 h1{
     font-family: 'Montserrat';
     font-size: 40px;
-    justify-content: center;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%); /* This centers the text horizontally */
+    white-space: nowrap; /* Prevents text wrapping */
 }
 header{
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     max-height: 80px;
     border-bottom: solid lightgray 2px;
+    padding: 10px 20px;
 }
 .logo{
-    justify-self: center;
-    width: fit-content;
-    height: fit-content;
+    height: 100px;
+    width: auto;
+    margin-right: auto;
 }
